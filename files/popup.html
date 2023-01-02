@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Pomodoraeme</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #81cdeb;
+    }
+    .container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+    .header h1 {
+      color: #81cdeb;
+    }
+    .timer #time-display {
+      font-size: 3em;
+      color: #81cdeb;
+    }
+    .to-do-list h2 {
+      color: #81cdeb;
+    }
+  </style>
 </head>
 <body>
-    
-</body>
-</html>
+  <div class="container">
+    <div class="header text-center">
+      <h1>Pomodoraeme</h1>
+    </div>
+    <div class="timer mt-5 mb-5 text-center">
+      <div id="time-display" class="display-4">25:00</div>
+      <div class="btn-group" role="group">
+        <button id="start-button" class="btn btn-success">Start</button>
+        <button id="stop-button" class="btn btn-warning">Stop</button>
+        <button id="reset-button" class="btn btn-danger">Reset</button>
+      </div>
+    </div>

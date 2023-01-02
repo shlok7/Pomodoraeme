@@ -24,28 +24,21 @@ document.addEventListener("DOMContentLoaded", function() {
       timer = setInterval(function() {
         timeREMAIN--;
 
-        // If time is up
         if (timeREMAIN === 0) {
           let beep = new Audio("beep.mp3");
           beep.play();
 
-          // If in work mode
           if (workMode) {
-            // Switch to break mode
             workMode = false;
             timeREMAIN = breakTime * 60;
             modeDisplay.textContent = "Break Mode";
           }
-          // If in break mode
           else {
-            // Switch to work mode
             workMode = true;
             timeREMAIN = workTime * 60;
             modeDisplay.textContent = "Work Mode";
           }
         }
-
-        // Update time display
         let minutes = Math.floor(timeREMAIN / 60);
         let seconds = timeREMAIN % 60;
         timeDisplay.textContent = `${minutes}:${seconds}`;

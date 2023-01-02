@@ -1,11 +1,9 @@
-/* Custom font for timer and task list */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 #time-display, .list-group-item {
   font-family: 'Nunito', sans-serif;
 }
 
-/* Custom styles */
 body {
   background-color: #81cdeb;
 }

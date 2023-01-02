@@ -1,5 +1,5 @@
 ![](https://gcdnb.pbrd.co/images/XEPIde2TtqKg.png?o=1)
-# 🟦 Pomodoraeme ⬜
+# 🟦 Pomodoraeme Web Extension ⬜
 
 Are you tired of feeling like you're constantly running out of time? Time to call in some backup – Pomodoraeme is here to help!
 

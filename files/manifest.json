@@ -1,17 +1,23 @@
 {
     "author": "Shlok Panchal",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Pomodoraeme",
     "description": "A Doraemon styled Pomodoro timer and to-do list helper extension.",
     "version": "1.0.0",
     "action": {
         "default_title": "Pomodoraeme",
         "default_popup": "popup.html",
-        "default_icon": "icon.png"
+        "default_icon": "Pomodoraeme.png"
 
     },
     "permissions": [
       "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "js": ["popup.js"],
+        "matches": ["<all_urls>"]
+      }
     ]
   }
   
